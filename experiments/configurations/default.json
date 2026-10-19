@@ -1,0 +1,22 @@
+{
+  "name": "default-delta",
+  "description": "Requested LunarMind baseline. Terminal rewards are fixed in code at +100 and -1000.",
+  "seed": 0,
+  "timesteps": 100000,
+  "gravity": 1.62,
+  "main_accel": 4.0,
+  "attitude_torque": 0.8,
+  "inertia": 1.0,
+  "max_steps": 1000,
+  "reward_mode": "delta",
+  "distance_weight": 5,
+  "speed_weight": 3,
+  "upright_weight": 2,
+  "gamma": 0.99,
+  "n_envs": 1,
+  "n_steps": 2048,
+  "batch_size": 256,
+  "learning_rate": 0.0003,
+  "auto_eval_episodes": 3,
+  "milestones": [0, 10000, 50000, 100000, 250000, 500000, 1000000]
+}
